@@ -36,3 +36,43 @@ const dataLine = {
   };
   
   new mdb.Chart(document.getElementById('line-chart'), dataLine);
+  
+  var areaChartOptions = {
+    series: [{
+    type: 'area',
+    data: [44, 55, 31, 47, 31, 43, 26, 41, 31, 47, 33]
+  }, {
+    type: 'line',
+    data: [55, 69, 45, 61, 43, 54, 37, 52, 44, 61, 43]
+  }],
+    chart: {
+    height: 350,
+    type: 'line',
+  },
+  stroke: {
+    curve: 'smooth'
+  },
+  fill: {
+    type:'solid',
+    opacity: [0.35, 1],
+  },
+  labels: ['0', '1','2','3','4','5','6','7','8','9','10'],
+  markers: {
+    size: 0
+  },
+  tooltip: {
+    shared: true,
+    intersect: false,
+    y: {
+      formatter: function (y) {
+        if(typeof y !== "undefined") {
+          return  y.toFixed(0) + " points";
+        }
+        return y;
+      }
+    }
+  }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#chart"), areaChartOptions);
+  chart.render();
