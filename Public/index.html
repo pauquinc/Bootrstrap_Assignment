@@ -19,7 +19,7 @@
   <div class="container-fluid">
     <div class="row flex-nowrap">
 
-      <div class="bg-dark col-auto col-md-3 col-lg- min-vh-100">
+      <div class="bg-dark col-auto col-md-2 col-lg- min-vh-100">
         <div class="bg-colour p-2">
           <a class="d-flex text-decoration-none mt-1 align-items-center text-muted">
             <span class="fs-5 d-none d-sm-inline">Dashboard Kit</span>
@@ -141,7 +141,7 @@
                     <th scope="col"></th>
                     <th scope="col">Unresolved Ticket</th>
                     <th scope="col"></th>
-                    <th class="link-primary" scope="col">View Detail</th>
+                    <th class="link-primary h6" scope="col">View Detail</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -179,7 +179,6 @@
             <!-- Tasks -->
 
             <div class="col-6 gx-3 text-center">
-              Tasks
 
               <section class="vh-100" >
                 <div class="container h-100">
@@ -190,18 +189,19 @@
                           <table class="table mb-0">
                             <thead>
                               <tr>
-                                <th scope="col"><span class="badge bg-warning">URGENT</span>Tasks</th>
-                             <th scope="col"></th>
-                                <th scope="col"></th>
-                                <th scope="col">Actions</th>
+                                <th scope="col">Tasks</th>
+                             <!-- <th scope="col"></th>
+                                <th scope="col"></th> -->
+                                <th class="link-primary h6" scope="col">Actions</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr class="fw-normal">
-                              <th class=" align-baseline">Finish Ticket Update</th>
+                              <th class="align-baseline">
+                              <input type="radio" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label fw-lighter" for="exampleCheck1">Finish Ticket Update</label></th>
 
-
-                                <td class="align-baseline">Finish Ticket Update</td>
+                             
                                 <td class="align-baseline">
                                   <h6 class="mb-0"><span class="badge bg-warning">URGENT</span></h6>
                                 </td>
@@ -209,20 +209,21 @@
                                 </td>
                               </tr>
                               <tr class="fw-normal">
-                                <th>
-                                  
-                                </th>
-                                <td class="align-middle">Create New Ticket Example</td>
+                                <th class="align-baseline">
+                                  <input type="radio" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label fw-lighter" for="exampleCheck1">Create New Ticket Example</label></th>
                                 <td class="align-middle">
                                   <h6 class="mb-0"><span class="badge bg-success">NEW</span></h6>
                                 </td>   <td>
                                 </td>
                               </tr>
                               <tr class="fw-normal">
-                                <th>
+                                <!-- <th>
                                   
-                                </th>
-                                <td class="align-middle">Update Ticket Report</td>
+                                </th> -->
+                                <th class="align-baseline">
+                                  <input type="radio" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label fw-lighter" for="exampleCheck1">Update Ticket Report</label></th>
                                 <td class="align-middle">
                                   <h6 class="mb-0"><span class="badge bg-secondary">Default</span></h6>
                                 </td>
